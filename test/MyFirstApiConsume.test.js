@@ -5,7 +5,7 @@ const chai = require('chai');
 const expect = chai.expect;
 
 describe('First Api Tests', () => {
-});
+
 
 it('Consume GET Service', async () => {
     const response = await agent.get('https://httpbin.org/ip');
@@ -72,3 +72,5 @@ it('Consume GET Service', async () => {
     expect(response.status).to.equal(statusCode.OK);
     expect(response.body.args).to.eql(requestBody);
   });
+
+});
